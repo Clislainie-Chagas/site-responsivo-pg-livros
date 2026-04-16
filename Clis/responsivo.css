@@ -1,32 +1,36 @@
-
-
 @media screen and (max-width: 1020px) {
 
-    .inicio .box-img img{
+    .inicio .box-img img {
         width: 260px;
         height: 260px;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .inicio .box-img img{
+    .inicio .box-img img {
         width: 220px;
         height: 220px;
     }
+
     .navbar ul li a {
         display: none;
     }
-    .navbar h4  {
+
+    .navbar h4 {
         font-size: 40px;
         padding: 20px 4%;
     }
+
     .barra-mobile {
-        display: block;   
+        display: block;
     }
+
     .menu-mobile.abrir_menu {
         display: block;
     }
-    .box-projetos {  /*fundo de todos projetos*/
+
+    .box-projetos {
+        /*fundo de todos projetos*/
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 50px;
     }
@@ -37,18 +41,20 @@
 @media screen and (max-width: 768px) {
     /*MENU*/
 
-    .navbar h4  {
+    .navbar h4 {
         font-size: 30px;
         padding: 20px 4%;
     }
+
     .navbar ul li a {
         display: none;
     }
 
     /*MOBILE*/
     .barra-mobile {
-        display: block;   
+        display: block;
     }
+
     .menu-mobile.abrir_menu {
         display: block;
     }
@@ -60,6 +66,7 @@
     .inicio .text-principal h2 {
         font-size: 30px;
     }
+
     .inicio .brand h1 {
         font-size: 20px;
     }
@@ -72,27 +79,31 @@
         justify-content: center;
         flex-direction: column-reverse;
     }
+
     .inicio .box-img {
         align-items: center;
         justify-content: center;
     }
+
     .inicio .box-img img {
         width: 200px;
         height: 200px;
-        align-items: center; 
+        align-items: center;
     }
+
     .inicio .box-paragrafo {
         align-items: center;
         justify-content: center;
         padding: 20px 2%;
         width: 100%;
     }
+
     .inicio .box-paragrafo .text-paragrafo {
         font-size: 30px;
         letter-spacing: 1px;
         align-items: center;
         text-align: center;
-        padding: 10px 10px ;  
+        padding: 10px 10px;
     }
 
     /*SOBRE MIM*/
@@ -100,8 +111,9 @@
     .sobre h1 {
         font-size: 40px;
         margin: 30px;
-    } 
-    .sobre .info-sobre  {
+    }
+
+    .sobre .info-sobre {
         font-size: 1.2rem;
         margin: 0 auto;
         padding: 0;
@@ -111,27 +123,33 @@
 
     .portifolio .title-work {
         font-size: 20px;
-    }   
-    .box-projetos {  /*fundo de todos projetos*/
+    }
+
+    .box-projetos {
+        /*fundo de todos projetos*/
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 50px;
     }
 
     .box-projetos .box-imagem-projeto {
-    padding: 20px 6%;
+        padding: 20px 6%;
     }
+
     .box-projetos .box-imagem-projeto img {
         width: 100%;
         height: 240px;
         align-items: center;
         justify-content: center;
     }
+
     .box-projetos .info-projeto {
         padding: 20px 4%;
     }
+
     .box-projetos .info-projeto .title-projeto {
         font-size: 20px;
     }
+
     .box-projetos .info-projeto .info-projetos {
         font-size: 16px;
         margin-top: 3px;
@@ -141,39 +159,46 @@
 @media screen and (max-width: 543px) {
     /*MENU*/
 
-    .navbar h4  {
+    .navbar h4 {
         font-size: 15px;
         padding: 20px 4%;
         font-family: cursive;
     }
 }
+
 @media screen and (max-width: 1020px) {
 
-    .inicio .box-img img{
+    .inicio .box-img img {
         width: 260px;
         height: 260px;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .inicio .box-img img{
+    .inicio .box-img img {
         width: 220px;
         height: 220px;
     }
+
     .navbar ul li a {
         display: none;
     }
-    .navbar h4  {
+
+    .navbar h4 {
         font-size: 40px;
         padding: 20px 4%;
     }
+
     .barra-mobile {
-        display: block;   
+        display: block;
     }
+
     .menu-mobile.abrir_menu {
         display: block;
     }
-    .box-projetos {  /*fundo de todos projetos*/
+
+    .box-projetos {
+        /*fundo de todos projetos*/
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 50px;
     }
@@ -184,18 +209,20 @@
 @media screen and (max-width: 768px) {
     /*MENU*/
 
-    .navbar h4  {
+    .navbar h4 {
         font-size: 30px;
         padding: 20px 4%;
     }
+
     .navbar ul li a {
         display: none;
     }
 
     /*MOBILE*/
     .barra-mobile {
-        display: block;   
+        display: block;
     }
+
     .menu-mobile.abrir_menu {
         display: block;
     }
@@ -207,6 +234,7 @@
     .inicio .text-principal h2 {
         font-size: 30px;
     }
+
     .inicio .brand h1 {
         font-size: 20px;
     }
@@ -219,27 +247,31 @@
         justify-content: center;
         flex-direction: column-reverse;
     }
+
     .inicio .box-img {
         align-items: center;
         justify-content: center;
     }
+
     .inicio .box-img img {
         width: 200px;
         height: 200px;
-        align-items: center; 
+        align-items: center;
     }
+
     .inicio .box-paragrafo {
         align-items: center;
         justify-content: center;
         padding: 20px 2%;
         width: 100%;
     }
+
     .inicio .box-paragrafo .text-paragrafo {
         font-size: 30px;
         letter-spacing: 1px;
         align-items: center;
         text-align: center;
-        padding: 10px 10px ;  
+        padding: 10px 10px;
     }
 
     /*SOBRE MIM*/
@@ -247,8 +279,9 @@
     .sobre h1 {
         font-size: 40px;
         margin: 30px;
-    } 
-    .sobre .info-sobre  {
+    }
+
+    .sobre .info-sobre {
         font-size: 1.2rem;
         margin: 0 auto;
         padding: 0;
@@ -258,37 +291,57 @@
 
     .portifolio .title-work {
         font-size: 20px;
-    }   
-    .box-projetos {  /*fundo de todos projetos*/
+    }
+
+    .box-projetos {
+        /*fundo de todos projetos*/
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 50px;
     }
 
     .box-projetos .box-imagem-projeto {
-    padding: 20px 6%;
+        padding: 20px 6%;
     }
+
     .box-projetos .box-imagem-projeto img {
         width: 100%;
         height: 240px;
         align-items: center;
         justify-content: center;
     }
+
     .box-projetos .info-projeto {
         padding: 20px 4%;
     }
+
     .box-projetos .info-projeto .title-projeto {
         font-size: 20px;
     }
+
     .box-projetos .info-projeto .info-projetos {
         font-size: 16px;
         margin-top: 3px;
     }
 }
 
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .barra-mobile {
+        display: block;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 543px) {
     /*MENU*/
 
-    .navbar h4  {
+    .navbar h4 {
         font-size: 15px;
         padding: 20px 4%;
         font-family: cursive;
