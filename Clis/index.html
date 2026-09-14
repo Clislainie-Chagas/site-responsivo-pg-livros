@@ -1,260 +1,525 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio de Clislainie Chagas, Desenvolvedora Full-Stack e estudante de Análise e Desenvolvimento de Sistemas.">
 
-    <!--<link rel="stylesheet" href="/Clis/styles.css">-->
-   
-    <link rel="stylesheet" href="novo.css">
-    <link rel="stylesheet" href="/Clis/responsivo.css">
+    <title>Clislainie Chagas | Desenvolvedora Full-Stack</title>
 
-    <script src="/Clis/script_port.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-   
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abel&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=Felipa&family=Fleur+De+Leah&family=Kalnia+Glaze:wght@100..700&family=Lavishly+Yours&family=Merienda&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    
-<title>Clis Chagas</title>
 
-    
-</head>     
+    <link rel="stylesheet" href="./novo.css">
+    <link rel="stylesheet" href="./responsivo.css">
+
+    <script src="./script_port.js" defer></script>
+</head>
+
 <body>
 
-<div class="particulas"></div> <!--animação de movimentos-->
+    <div class="particulas" aria-hidden="true"></div>
 
-<!--BARRA DO MENU WEB-->
-<section id="barra-menu">
-    <nav id="navbar" class="navbar">
-        <h4>Clislainie Chagas</h4>
+    <header class="cabecalho">
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="logo" aria-label="Ir para o início">
+                Clis <span>Chagas</span>
+            </a>
 
-        <ul class="menu">
-            <li ><a href="#home" class="menu-home">Inicio</a></li>
-            <li><a href="#about" class="menu-home">Sobre</a></li>
-            <li><a href="#work" class="menu-home">Projetos</a></li>
-            <li><a href="#contact" class="menu-home">Contatos</a></li>   
-        </ul>
-        <div class="barra-mobile" id="btn_barra">
-            <i class="fa-solid fa-bars"></i>
-        </div> 
-    </nav>
-</section>
+            <ul class="menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Tecnologias</a></li>
+                <li><a href="#work">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
 
-<!-- menu mobile -->
+            <button class="barra-mobile" id="btn_barra" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
 
- <div class="menu-mobile" id="menu-mobile">
-        <div class="btn-fechar" id="btn-fechar">
-            <i class="bi bi-x-square"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
-                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                </svg></i>    
-        </div>
-          <nav class="nav-list" id="nav_list">     
-            <ul class="ul-list">
-                <li><a href="#home" class="menu">Inicio</a></li>
-                <li><a href="#about" class="menu">Sobre</a></li>
-                <li><a href="#work" class="menu">Projetos</a></li>
-                <li><a href="#contact" class="menu">Contatos</a></li>   
-            </ul>   
-          </nav>
- </div> 
- <div class="overlay" id="overlay"></div>   
-<!--posso por botão de carrinho ou qualquer outro para ficar na barra--> 
-   
-<main  id="home" class="inicio">
-    <div class="text-principal"> 
-        <h2>Desenvolvedora</h2>
+    <div class="menu-mobile" id="menu-mobile">
+        <button class="btn-fechar" id="btn-fechar" aria-label="Fechar menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Tecnologias</a></li>
+                <li><a href="#work">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
     </div>
-        <div class="brand">
-            <h1>Front End e Python</h1>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main id="home" class="inicio">
+        <div class="hero-container">
+
+            <div class="hero-texto">
+                <span class="hero-tag">
+                    <i class="fa-solid fa-code"></i>
+                    Full-Stack Developer • ADS Student
+                </span>
+
+                <p class="hero-intro">Olá, eu sou</p>
+
+                <h1>Clislainie <span>Chagas.</span></h1>
+
+                <h2>Desenvolvedora Full-Stack</h2>
+
+                <p class="hero-descricao">
+                    Desenvolvo interfaces modernas, responsivas e funcionais,
+                    combinando design, experiência do usuário e código.
+                </p>
+
+                <div class="hero-tecnologias" aria-label="Principais tecnologias">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>TypeScript</span>
+                    <span>Tailwind CSS</span>
+                    <span>Node.js</span>
+                    <span>React</span>
+                    <span>Docker</span>
+                    <span>MongoDB</span>
+                    <span>PostgreSQL</span>
+                    <span>Python</span>
+                    <span>Insomnia</span>
+                </div>
+
+                <div class="hero-botoes">
+                    <a href="#work" class="btn-principal">
+                        Ver projetos
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <!-- EDITE: coloque o endereço real do seu GitHub -->
+                    <a href="https://github.com/Clislainie-Chagas" target="_blank" rel="noopener noreferrer"
+                        class="btn-secundario">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-imagem">
+                <div class="foto-wrapper">
+                    <!-- Mantenha sua foto nesta pasta ou altere o caminho abaixo -->
+                    <img src="./img/Eu.-removebg-preview.png" alt="Foto de Clis Chagas">
+                </div>
+
+                <div class="status-card">
+                    <span class="status-dot"></span>
+                    <div>
+                        <small>Status profissional</small>
+                        <strong>Disponível para oportunidades</strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section id="about" class="secao sobre">
+        <div class="section-heading">
+            <span class="section-number">01</span>
+            <div>
+                <p class="section-kicker">Conheça um pouco</p>
+                <h2>Sobre mim</h2>
+            </div>
         </div>
 
+        <div class="sobre-grid">
+            <div class="sobre-card">
+                <!-- EDITE: personalize este texto com suas informações -->
+                <p>
+                    Olá, eu sou Clis Chagas. Estou em transição de carreira para tecnologia
+                    e curso Análise e Desenvolvimento de Sistemas. Minha trajetória criativa
+                    despertou em mim um interesse especial pela construção de experiências
+                    digitais que unam estética, clareza e funcionalidade.
+                </p>
 
-        <div class="juntar-foto-paragrafo">
-            <div class="box-paragrafo">
-                <p class="text-paragrafo">
-                    <br>Criando experiências digitais luxuosas e funcionais com,</br>
-                    <span>HTML, CSS e JAVA SCRIPT,</span>
-                    <br>Além disso,sou aprendiz de</br>
-                    <span>PYTHON</span>
+                <p>
+                    Atualmente, desenvolvo projetos práticos para aprofundar meus conhecimentos
+                    em Front-End, JavaScript, React, Python, APIs e bancos de dados. Busco uma
+                    oportunidade como desenvolvedora júnior ou estagiária para continuar evoluindo
+                    em um ambiente profissional e contribuir com soluções reais.
                 </p>
             </div>
-             <div class="box-img">
-                <div class="foto-perfil">
-                    <img src="/Clis/img/Eu.-removebg-preview.png" alt="photo">
+
+            <aside class="sobre-destaques">
+                <div>
+                    <span>Foco</span>
+                    <strong>Front-End</strong>
                 </div>
-            </div> 
+                <div>
+                    <span>Formação</span>
+                    <strong>ADS</strong>
+                </div>
+                <div>
+                    <span>Objetivo</span>
+                    <strong>Estágio / Júnior</strong>
+                </div>
+            </aside>
         </div>
-
-        <!-- BOTOES DE CONTATOS -->
-
-                <div class="juntar-btns">
-                    <div class="box-btn">
-                        <a href="47996741534">
-                            <button class="btn_default">
-                                <i class="fa-solid fa-phone" id="i-tel"> </i> telefone</a>
-                            </button>
-                    </div>
-                    <div class="btn">
-                        <button> Ver projetos &rarr; </button>
-                    </div>
-                </div>
-</main>
-
-<section id="about" class="sobre">
-    <h1 class="title-sobre">Sobre mim</h1>
-
-        <div class="box-sobre">
-            <p class="info-sobre">
-                Olá, eu me chamo Clislanie Chagas! Atualmente, estou em transição de carreira. Nesses anos descobri uma paixão por programação e criação de sites, e desenvolvimento web. Pensando nisso, decidi me especializar na área e dar continuidade nos meus projetos que eram apenas para uso pessoal em algo profissional.
-                Estou cursando, Análise e Desenvolvimento de Sistemas, com foco na criação de soluções tecnológicas eficientes. Atualmente, estou aprimorando meus conhecimentos em Python e no desenvolvimento Front-End, estudando HTML, CSS e JavaScript para construção de sites modernos, responsivos e funcionais.
-                Estou em constante evolução, desenvolvendo projetos práticos para fortalecer minha lógica de programação e minhas habilidades técnicas.
-            </p>
-        </div>
-</section>
-            
-    <section id="work" class="portifolio">
-            <div class="title-work">
-                <h2>Meus projetos</h2>
-            </div>
-
-            <div class="box-projetos">
-
-                <div class="box-imagem-projeto">
-                <a href="https://clis-chagas-coder.github.io/site-responsivo/" target="_blank"><img src="/Clis/img/Captura de tela 2026-02-25 225453.png" alt="" class="imagem-projeto"></a>
-
-                        <div class="info-projeto">
-                            <h3 class="title-projeto">Site Responsivo</h3>
-                            <p class="info-projetos">
-                                Este site foi desenvolvidoa com muitos detalhes e 
-                                com bastante funçoes para atender todas as necesidades do cliente. Site, baseado em aulas de criação de sites pelo YouTube.
-                            </p>
-                        </div>
-                </div>
-
-                <div class="box-imagem-projeto">
-                    <img src="/Clis/img/capa-site-meu.png" alt="" class="imagem-projeto">
-
-                        <div class="info-projeto">
-                            <h3 class="title-projeto">Site de Restaurante</h3>
-                            <p class="info-projetos">
-                                ESte site foi desenvolvidoa com muitos detalhes e 
-                                com bastante funçoes para atender todas as necesidades do cliente, com visual moderno e luxuoso.
-                            </p>
-                        </div>
-                </div>
-                <div class="box-imagem-projeto">
-                    <img src="/Clis/img/portifolio-3.jpg" alt="" class="imagem-projeto">
-
-                        <div class="info-projeto">
-                            <h3 class="title-projeto">Site de Restaurante</h3>
-                            <p class="info-projetos">
-                                ESte site foi desenvolvidoa com muitos detalhes e 
-                                com bastante funçoes para atender todas as necesidades do cliente, com visual moderno e luxuoso.
-                            </p>
-                        </div>
-                </div>
-                <div class="box-imagem-projeto">
-                    <img src="/Clis/img/portifolio-1.jpg" alt="" class="imagem-projeto">
-
-                        <div class="info-projeto">
-                            <h3 class="title-projeto">Site de Restaurante</h3>
-                            <p class="info-projetos">
-                                ESte site foi desenvolvidoa com muitos detalhes e 
-                                com bastante funçoes para atender todas as necesidades do cliente, com visual moderno e luxuoso.
-                            </p>
-                        </div>
-                </div>
-                <div class="box-imagem-projeto">
-                    <img src="/Clis/img/portifolio-2.jpg" alt="" class="imagem-projeto">
-
-                        <div class="info-projeto">
-                            <h3 class="title-projeto">Site de Restaurante</h3>
-                            <p class="info-projetos">
-                                ESte site foi desenvolvidoa com muitos detalhes e 
-                                com bastante funçoes para atender todas as necesidades do cliente, com visual moderno e luxuoso.
-                            </p>
-                        </div>
-                </div>
-
-                <div class="box-imagem-projeto">
-                    <img src="/Clis/img/portifolio-1.jpg" alt="" class="imagem-projeto">
-
-                        <div class="info-projeto">
-                            <h3 class="title-projeto">Site de Restaurante</h3>
-                            <p class="info-projetos">
-                                ESte site foi desenvolvidoa com muitos detalhes e 
-                                com bastante funçoes para atender todas as necesidades do cliente, com visual moderno e luxuoso.
-                            </p>
-                        </div>
-                </div>
-        </div>
-  </section>
-
-    <section id="contact" class="contato">
-        <h2 class="contato-title">Entre em contato</h2>
-
-        <form class="formulário-contato" id="formulário" onsubmit="enviarWhats(event)">
-
-            <div class="nome-form">
-                <input placeholder="Nome" class="box-msg-formulario-1" id="nome">  
-            </div>
-
-            <div class="nome-form">
-                <textarea placeholder="Digite sua mensagem" class="box-msg-formulario-2"  id="mensagem">
-                </textarea>
-            </div>
-            <button type="submit" class="botao-formulario">Enviar WhatsApp</button>
-        </form>
     </section>
 
-      <footer class="rodape">
+    <section id="skills" class="secao tecnologias">
+        <div class="section-heading">
+            <span class="section-number">02</span>
+            <div>
+                <p class="section-kicker">Ferramentas que utilizo</p>
+                <h2>Tecnologias</h2>
+            </div>
+        </div>
+
+        <div class="skills-grid">
+            <article class="skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Estrutura semântica e acessível.</p>
+            </article>
+
+            <article class="skill-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p>Layouts responsivos e interfaces modernas.</p>
+            </article>
+
+            <article class="skill-card">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Interatividade, DOM e consumo de APIs.</p>
+            </article>
+
+            <article class="skill-card">
+                <i class="fa-brands fa-react"></i>
+                <h3>React</h3>
+                <p>Componentização e interfaces dinâmicas.</p>
+            </article>
+
+            <article class="skill-card">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+                <p>Lógica, APIs e desenvolvimento Back-End.</p>
+            </article>
+
+            <article class="skill-card">
+                <i class="fa-brands fa-docker"></i>
+                <h3>Docker</h3>
+                <p>Conteinerização e implantação de aplicações.</p>
+            </article>
+
+            <article class="skill-card">
+                <i class="fa-brands fa-node-js"></i>
+                <h3>Node.js</h3>
+                <p>Lógica, APIs e desenvolvimento Back-End.</p>
+            </article>
+
+            <article class="skill-card">
+                <i class="fa-brands fa-react"></i>
+                <h3>APIs</h3>
+                <p>Conexão com serviços externos e consumo de dados.</p>
+            </article>
+
+            <article class="skill-card">
+                <i class="fa-brands fa-git-alt"></i>
+                <h3>Git & GitHub</h3>
+                <p>Versionamento e organização de projetos.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="work" class="secao portifolio">
+        <div class="section-heading">
+            <span class="section-number">03</span>
+            <div>
+                <p class="section-kicker">Uma seleção do meu trabalho</p>
+                <h2>Meus projetos</h2>
+            </div>
+        </div>
+
+        <div class="box-projetos">
+
+            <article class="projeto-card">
+                <a href="https://github.com/Clislainie-Chagas/blog-store-react" target="_blank"
+                    rel="noopener noreferrer" class="projeto-imagem">
+                    <img src="./img/capa-arte-da-magia.png" alt="Prévia do projeto Site Responsivo">
+                </a>
+
+                <div class="info-projeto">
+                    <span class="projeto-numero">01</span>
+                    <h3>Site, Blog e loja virtual</h3>
+                    <p>
+                        Site com loja on line e blog, uma langpage para divulgar produtos de outra plataforma,
+                        utilizando tecnologias: React, Javascript, conexão de API, logins, conexão de
+                        pagamentos entre outros.
+                    </p>
+
+                    <div class="projeto-stack">
+                        <span>React</span>
+                        <span>Python</span>
+                        <span>Docker</span>
+                        <span>JavaScript</span>
+                        <span>Tailwind CSS</span>
+                        <span>PostgreSQL</span>
+                        <span>JWT</span>
+                    </div>
+
+                    <div class="projeto-links">
+                        <a href="https://github.com/Clislainie-Chagas/TaskFlow_Pythn_React" target="_blank"
+                            rel="noopener noreferrer">
+                            Projeto <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <!-- EDITE: coloque o repositório real deste projeto -->
+                        <a href="https://github.com/Clislainie-Chagas/TaskFlow_Pythn_React" target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="projeto-card">
+                <a href="https://github.com/Clislainie-Chagas/TaskFlow_Pythn_React" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="projeto-imagem">
+                        <img src="./img/taskflow-capa.png" alt="Prévia do projeto Site de Restaurante">
+                    </div>
+                </a>
+
+                <div class="info-projeto">
+                    <span class="projeto-numero">02</span>
+                    <h3>Gerenciador de Tarefas</h3>
+                    <p>
+                        Aplicação para organizar tarefas, com criação de tarefas, edição e exclusão, utilizando React e
+                        Python.
+                    </p>
+
+                    <div class="projeto-stack">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Python</span>
+                        <span>SQLAlchemy</span>
+                        <span>FastAPI</span>
+                        <span>SQLite</span>
+                        <span>JWT</span>
+                    </div>
+
+                    <div class="projeto-links">
+                        <!-- EDITE: troque # pelos links reais -->
+                        <a href="https://github.com/Clislainie-Chagas/TaskFlow_Pythn_React" target="_blank"
+                            rel="noopener noreferrer">
+                            Projeto <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="https://github.com/Clislainie-Chagas/TaskFlow_Pythn_React" target="_blank"
+                            aria-label="https://github.com/Clislainie-Chagas/TaskFlow_Pythn_React">
+                            GitHub <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="projeto-card">
+                <a href="https://github.com/Clislainie-Chagas/calculadora_imc" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="projeto-imagem">
+                        <img src="./img/calculadora-imc.png" alt="Prévia do projeto Site de Restaurante">
+                    </div>
+                </a>
+                <div class="info-projeto">
+                    <span class="projeto-numero">03</span>
+                    <h3>Calculadora de IMC</h3>
+                    <p>
+                        Aplicação para calcular o Índice de Massa Corporal, com interface simples e funcionalidades
+                        básicas.
+                    </p>
+
+                    <div class="projeto-stack">
+                        <span>TypeScript</span>
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="projeto-links">
+                        <!-- EDITE: troque # pelos links reais -->
+                        <a href="https://github.com/Clislainie-Chagas/TaskFlow_Pythn_React" target="_blank"
+                            rel="noopener noreferrer">
+                            Projeto <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="https://github.com/Clislainie-Chagas/calculadora_imc" target="_blank"
+                            aria-label="https://github.com/Clislainie-Chagas/calculadora_imc">
+                            GitHub <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="contact" class="secao contato">
+
+        <div class="contato-cabecalho">
+
+            <span class="contato-numero">04</span>
+
+            <span class="contato-tag">
+                VAMOS CONVERSAR?
+            </span>
+
+            <h2>
+                Entre em <span>contato</span>
+            </h2>
+
+            <p>
+                Estou aberta a oportunidades, novos projetos e conexões
+                profissionais.
+            </p>
+
+        </div>
+
+
+        <div class="contato-container">
+
+            <!-- LADO ESQUERDO -->
+
+            <div class="contato-apresentacao">
+
+                <span class="contato-mini-tag">
+                    DISPONÍVEL PARA OPORTUNIDADES
+                </span>
+
+                <h3>
+                    Vamos transformar uma
+                    <span>ideia em projeto?</span>
+                </h3>
+
+                <p>
+                    Se você procura uma desenvolvedora comprometida,
+                    criativa e em constante evolução, será um prazer
+                    conversar sobre oportunidades e projetos.
+                </p>
+
+
+                <div class="contato-redes">
+
+                    <a href="https://github.com/Clislainie-Chagas" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+
+                        <div>
+                            <small>GitHub</small>
+                            <strong>Ver projetos</strong>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.linkedin.com/in/clislainie-chagas/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                        <div>
+                            <small>LinkedIn</small>
+                            <strong>Conectar</strong>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORMULÁRIO -->
+
+            <form class="formulario-contato" id="formulario">
+
+                <div class="form-titulo">
+
+                    <span>ENVIE UMA MENSAGEM</span>
+
+                    <h3>
+                        Fale comigo
+                    </h3>
+
+                </div>
+
+
+                <div class="campo-form">
+
+                    <label for="nome">
+                        Digite seu nome aqui.
+                    </label>
+
+                    <input type="text" id="nome" placeholder="Como posso chamar você?" required>
+
+                </div>
+
+
+                <div class="campo-form">
+
+                    <label for="mensagem">
+                        Digite sua mensagem aqui.
+                    </label>
+
+                    <textarea id="mensagem" placeholder="Conte um pouco sobre a oportunidade ou projeto..."
+                        required></textarea>
+
+                </div>
+
+
+                <button type="submit">
+
+                    <span>
+                        Enviar mensagem
+                    </span>
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer class="rodape">
+        <a href="#home" class="logo footer-logo">Clis <span>Chagas</span></a>
+
         <div class="redes-sociais">
-            <a href="https://instagram.com" target="_blank">
+            <!-- EDITE: substitua pelos seus links reais -->
+            <a href="https://github.com/Clislainie-Chagas" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/clislainie-chagas/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://www.instagram.com/clis_chagas/" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram">
                 <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a href="https://facebook.com" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-
-            <a href="https://youtube.com" target="_blank">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-
-            <a href="https://tiktok.com" target="_blank">
-                <i class="fa-brands fa-tiktok"></i>
             </a>
         </div>
 
-    <div class="footer-copy">
-         © <span id="year"></span> Clis Chagas. Todos os direitos reservados.
-    </div>
-
+        <p>© <span id="year"></span> Clis Chagas. Todos os direitos reservados.</p>
     </footer>
 
-    <script>
-         function enviarWhats(event) {
-            event.preventDefault()
-
-            const nome = document.getElementById('nome').value;
-            const mensagem = document.getElementById('mensagem').value;
-            const telefone = '554796741534';
-
-            const texto = `Olá me chamo ${nome}, ${mensagem}.`;
-            const msgFormatada = encodeURIComponent(texto);
-
-            const url = `https://wa.me/${telefone}?text=${msgFormatada}`; /*gerador de código whatsApp*/
-
-            window.open(url, '_blank')
-        }
-        const year = document.getElementById("year");
-        year.textContent = new Date().getFullYear();
-    </script>
-   
 </body>
+
 </html>
